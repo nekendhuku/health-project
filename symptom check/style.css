@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    margin: 0;
+    padding: 0;
+    background-image: url(formback.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+   
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    /* background-color: white; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 5px solid black;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#operationFields textarea {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#patientHistory {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 5px;
+}

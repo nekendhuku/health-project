@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modern Contact Form</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div class="hide">
+    <p>Form Submitted Successfully</p>
+  </div>
+  <div class="container">
+    <form action="sympcheck.html" class="contact-form"  >
+      <h2>Contact Us</h2>
+      <div class="input-box">
+        <input type="text" name="name" required>
+        <label for="name">Full Name</label>
+      </div>
+
+      <div class="input-box">
+        <input type="email" name="email" required>
+        <label for="email">Email</label>
+      </div>
+
+      <div class="input-box">
+        <input type="text" name="subject" required>
+        <label for="subject">Subject</label>
+      </div>
+
+      <div class="input-box">
+        <textarea name="message" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <button type="submit" class="submit-btn" >Send Message</button>
+    </form>
+    <script src="contact.js"></script>
+  </div>
+
+</body>
+</html>

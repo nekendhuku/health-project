@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Healthcare Project</title>
+    
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.table{
+    position: static;
+    padding-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+#home {
+    background-color: #f4f4f4;
+    
+}
+
+
+#services, #doctors, #appointments, #contact {
+    background-color: lightblue;
+    margin: 20px ;
+    border: 1px solid #ddd;
+}
+
+#services{
+    background-image: url(download.jpeg);
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+
+}
+
+#doctors{
+    background-image: url(bloodyy.png);
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+}
+
+#appointments{
+    background-image: url(history.png);
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+}
+
+#contact{
+    background-image: url(call.jpeg);
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+footer{
+    font-size: 2rem;
+    color: white;
+    background-color: violet;
+}
+    </style>
+    <nav class="navbar">
+        <div class="logo">HealthCare</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Check Up</a></li>
+            <li><a href="#appointments">Medical History</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+   
+    <section id="home">
+        <marquee behavior="" direction=""> <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Health Tips To Follow</h1>
+            <p class="tip" id="health-tip">Stay hydrated by drinking plenty of water throughout the day.</p></marquee>
+    </section>
+
+   
+
+    <section id="services">
+        <h2><a href="sympcheck.html">Health Check</a></h2>
+        <!-- <img src="download.jpeg" alt="health" height="50px" width="50px"> -->
+        <p>Enter your symptoms</p>
+    </section>
+
+    <section id="doctors">
+        <h2><a href="bloodbank.html">Blood Bank</h2></a>
+        <p>Donate Blood save Life</p>
+    </section>
+
+    <section id="appointments">
+        <h2><a href="healthtips.html">Medical History</a></h2>
+        <p>Make The Doctors View Easy</p>
+    </section>
+
+    <section id="contact">
+        <h2><a href="contact.html">Contact Us</a></h2>
+        <p>For Any Queries</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+              <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <p class="text-body-secondary">© 2024</p>
+              </div>
+          
+              <div class="col mb-3">
+          
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+    </footer>
+
+    <script>
+          const healthTips = [
+            "Stay hydrated by drinking plenty of water throughout the day.",
+            "Exercise regularly to maintain a healthy body and mind.",
+            "Eat a balanced diet rich in fruits, vegetables, and lean proteins.",
+            "Get at least 7-8 hours of sleep each night to help your body recover.",
+            "Wash your hands frequently to prevent the spread of germs.",
+            "Take short breaks and stretch during work to avoid strain.",
+            "Avoid smoking and limit alcohol consumption for a healthier lifestyle.",
+            "Practice mindfulness or meditation to reduce stress and anxiety."
+        ];
+
+        let currentTipIndex = 0;
+        const tipElement = document.getElementById("health-tip");
+
+        // Function to update the health tip
+        function updateTip() {
+            currentTipIndex = (currentTipIndex + 1) % healthTips.length;
+            tipElement.textContent = healthTips[currentTipIndex];
+        }
+
+        // Change the tip every 5 seconds
+        setInterval(updateTip, 5000);
+    </script>
+    
+</body>
+</html>
