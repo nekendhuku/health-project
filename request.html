@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Acquisition Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(rgb(165, 147, 147), green, blue);
+            margin: 0;
+            padding: 20px;
+            background-image: url(reqblo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        
+        .form-container {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        
+        h1 {
+            color: #d9534f;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .form-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            font-size: 22px;
+        }
+        
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 15px 0 5px;
+            color: #333;
+        }
+        
+        
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="tel"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #d9534f;
+            outline: none;
+        }
+        
+       
+        .consent {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        
+        .submit-btn {
+            background-color: #d9534f;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #c9302c;
+        }
+        
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+            font-size: 14px;
+        }</style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Blood Acquisition Request Form</h1>
+        <p class="form-description">Fill in the details below to request blood. Every drop counts!</p>
+
+        <form action="/submit-form" method="POST">
+            <!-- Patient Information -->
+            <h2>Patient Information</h2>
+
+            <label for="patient-name">Patient's Full Name:</label>
+            <input type="text" id="patient-name" name="patient-name" placeholder="Enter full name" required>
+
+            <label for="patient-age">Age:</label>
+            <input type="number" id="patient-age" name="patient-age" placeholder="Enter age" required>
+
+            <label for="patient-gender">Gender:</label>
+            <select id="patient-gender" name="patient-gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="patient-blood-group">Blood Group:</label>
+            <select id="patient-blood-group" name="patient-blood-group" required>
+                <option value="" disabled selected>Select blood group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <!-- Blood Request Details -->
+            <h2>Request Details</h2>
+
+            <label for="hospital-name">Hospital Name:</label>
+            <input type="text" id="hospital-name" name="hospital-name" placeholder="Enter hospital name" required>
+
+            <label for="hospital-address">Hospital Address:</label>
+            <textarea id="hospital-address" name="hospital-address" rows="3" placeholder="Enter hospital address" required></textarea>
+
+            <label for="units-needed">Number of Blood Units Required:</label>
+            <input type="number" id="units-needed" name="units-needed" placeholder="Enter number of units" required>
+
+            <label for="request-date">Required Date:</label>
+            <input type="date" id="request-date" name="request-date" required>
+
+            <label for="contact-person">Contact Person:</label>
+            <input type="text" id="contact-person" name="contact-person" placeholder="Enter contact person name" required>
+
+            <label for="contact-phone">Contact Phone:</label>
+            <input type="tel" id="contact-phone" name="contact-phone" placeholder="Enter phone number" required>
+
+            <!-- Consent -->
+            <div class="consent">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I confirm that all the information provided is accurate and truthful.</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Request Blood</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Thank you for helping save lives! Your request is valuable.</p>
+    </footer>
+
+</body>
+</html>

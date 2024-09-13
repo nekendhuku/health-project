@@ -1,0 +1,112 @@
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   margin: 0;
+   padding: 20px;
+   padding-left: 350px;
+   background-image: url(Health.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;     
+}
+
+.container {
+   max-width: 600px;
+   padding: 20px;
+   margin: 0 auto;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   background-color: color-mix(in srgb, rgb(51, 218, 237) 50%,rgb(224, 224, 224) 0%);
+}
+
+h1 {
+   text-align: center;
+   color: black;
+}
+
+label {
+   font-weight: bold;
+}
+
+input[type="number"], select, input[type="text"] {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   padding: 5px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+button {
+   display: inline-block;
+   width: 45%;
+   padding: 10px;
+   background-color: #28a745;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+button:hover {
+   background-color: #218838;
+}
+
+button#resetButton {
+   background-color: #dc3545;
+}
+
+button#resetButton:hover {
+   background-color: #c82333;
+}
+
+.loading {
+   display: none;
+   text-align: center;
+   font-size: 18px;
+   color: #333;
+}
+
+.result {
+   margin-top: 20px;
+   padding: 10px;
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   text-align: center;
+}
+
+#result {
+   display: none;
+}
+
+#suggestions {
+   list-style: none;
+   padding: 0;
+   border: 1px solid #ddd;
+   margin-top: -10px;
+   max-height: 100px;
+   overflow-y: auto;
+}
+
+#suggestions li {
+   padding: 8px;
+   cursor: pointer;
+}
+
+#suggestions li:hover {
+   background-color: #f0f0f0;
+}
+
+#selectedSymptoms {
+   margin-bottom: 20px;
+}
+
+#selectedSymptoms span {
+   background-color: #28a745;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 20px;
+   margin-right: 5px;
+   display: inline-block;
+}

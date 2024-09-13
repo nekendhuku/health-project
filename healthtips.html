@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient History</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Add jsPDF and html2canvas libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Medical History</h1>
+        
+        <!-- Form for patient information -->
+        <form id="patientForm">
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" id="hospitalName" name="hospitalName" required>
+
+            <label for="doctorName">Doctor Treated:</label>
+            <input type="text" id="doctorName" name="doctorName" required>
+
+            <label>Past Operations:</label>
+            <div id="operationFields">
+                <textarea name="operationHistory[]" placeholder="Enter past operation details"></textarea>
+            </div>
+            <button type="button" id="addOperation">Add Operation</button>
+
+            <label for="bloodReports">Upload Blood Reports (Images):</label>
+            <input type="file" id="bloodReports" name="bloodReports" accept="image/*" multiple>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Display patient history -->
+        <div id="patientHistory"></div>
+
+        <!-- Button to download the form as PDF -->
+        <button id="downloadPDF" style="display:none;">Download PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
